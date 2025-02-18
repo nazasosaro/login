@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../font/Poppins-Regular.woff2") format("woff2");
+}
+
+:root {
+    --font: "Poppins-Regular";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
