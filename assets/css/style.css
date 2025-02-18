@@ -36,6 +36,14 @@ img {
     outline: none;
 }
 
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
 .container-form {
     background-color: #7fa997;
     border-radius: 2rem;
@@ -85,6 +93,14 @@ img {
     font-size: .9rem;
     letter-spacing: .5px;
     margin-top: .5rem;
+}
+
+.show-hide {
+    position: relative;
+    float: right;
+    color: var(--color-1);
+    cursor: pointer;
+    transition: all .5s;
 }
 
 .btn-login {

@@ -28,7 +28,10 @@
                 <div class="item-form_group">
                     <img src="assets/images/padlock.svg" class="icon-form" alt="icon padlock">
                     <input type="password" name="password" id="password" class="input-form" placeholder="*******" required autocomplete="off">
-                    <span id="show-hide">Show/Hide</span>
+                    <span id="show-hide" class="show-hide">
+                        <img src="assets/images/eye.svg" alt="icon eye" class="icon-form d-block" id="showIcon">
+                        <img src="assets/images/eye-slash.svg" alt="icon eye slash" class="icon-form d-none" id="hideIcon">
+                    </span>
                 </div>
                 <div id="passwordError" class="error-message"></div>
             </div>
@@ -37,7 +40,7 @@
                 <label for="confirmPassword" class="label-form">Confirm Password</label>
                 <div class="item-form_group">
                     <img src="assets/images/padlock.svg" class="icon-form" alt="icon padlock">
-                    <input type="confirmPassword" name="confirmPassword" id="confirmPassword" class="input-form" placeholder="*******" required autocomplete="off">
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="input-form" placeholder="*******" required autocomplete="off">
                 </div>
                 <div id="confirmPasswordError" class="error-message"></div>
             </div>
