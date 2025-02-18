@@ -5,6 +5,12 @@
 
 :root {
     --font: "Poppins-Regular";
+    --bg-body: #dee9e4;
+    --white: #fff;
+    --color-1: #3f6256;
+    --color-2: #141f1c;
+    --color-light: #bcd3c9;
+    --color-hover: #2e413b;
 }
 
 * {
@@ -14,9 +20,98 @@
 }
 
 body {
-    font-family: var(--font);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: var(--bg-body);
+    font-family: var(--font);
     height: 100vh;
+}
+
+img {
+    vertical-align: middle;
+}
+
+:focus {
+    outline: none;
+}
+
+.container-form {
+    background-color: #7fa997;
+    border-radius: 2rem;
+    max-width: 412px;
+    width: 412px;
+    padding: 2rem;
+}
+
+.title-form {
+    color: var(--color-2);
+    letter-spacing: .5px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.label-form {
+    color: var(--color-1);
+    display: block;
+    font-size: 1.125rem;
+    margin-bottom: .2rem;
+}
+
+.input-form {
+    border: none;
+    font-size: 1rem;
+    color: var(--color-2);
+}
+
+.input-form::placeholder {
+    color: var(--color-2);
+}
+
+.icon-form {
+    width: 24px;
+    height: 24px;
+}
+
+.error-message {
+    color: red;
+    font-size: .9rem;
+    letter-spacing: .5px;
+    margin-top: .5rem;
+}
+
+.btn-login {
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.125rem;
+    letter-spacing: .5px;
+    height: 48px;
+    width: 100%;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+.btn-login:hover {
+    background-color: var(--color-hover);
+}
+
+@media screen and (max-width: 425px) {
+    .container-form {
+        margin: 0 1rem;
+    }
+    .label-form {
+        font-size: 1rem;
+    }
+    .input-form, .input-form::placeholder {
+        font-size: .9rem;
+    }
 }

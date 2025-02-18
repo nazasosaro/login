@@ -9,31 +9,40 @@
 </head>
 <body>
 
-    <div>
-        <h2>Login</h2>
+    <div class="container-form">
+        <h1 class="title-form">Login</h1>
 
         <form id="loginForm" novalidate>
 
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required autocomplete="off">
+                <label for="email" class="label-form">Email</label>
+                <div class="item-form_group">
+                    <img src="assets/images/email.svg" class="icon-form" alt="icon email">
+                    <input type="email" name="email" id="email" class="input-form" placeholder="user@gmail.com" required autocomplete="off">
+                </div>
                 <div id="emailError" class="error-message"></div>
             </div>
 
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required autocomplete="off">
-                <span id="show-hide">Show/Hide</span>
+                <label for="password" class="label-form">Password</label>
+                <div class="item-form_group">
+                    <img src="assets/images/padlock.svg" class="icon-form" alt="icon padlock">
+                    <input type="password" name="password" id="password" class="input-form" placeholder="*******" required autocomplete="off">
+                    <span id="show-hide">Show/Hide</span>
+                </div>
                 <div id="passwordError" class="error-message"></div>
             </div>
 
             <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="confirmPassword" name="confirmPassword" id="confirmPassword" required autocomplete="off">
+                <label for="confirmPassword" class="label-form">Confirm Password</label>
+                <div class="item-form_group">
+                    <img src="assets/images/padlock.svg" class="icon-form" alt="icon padlock">
+                    <input type="confirmPassword" name="confirmPassword" id="confirmPassword" class="input-form" placeholder="*******" required autocomplete="off">
+                </div>
                 <div id="confirmPasswordError" class="error-message"></div>
             </div>
 
-            <input type="submit" value="Login">
+            <input type="submit" class="btn-login" value="Login">
         </form>
     </div>
 
